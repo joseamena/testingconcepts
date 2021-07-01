@@ -15,6 +15,9 @@
 		92444EE5268928EF00EF855B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92444EE3268928EF00EF855B /* LaunchScreen.storyboard */; };
 		92444EF0268928F000EF855B /* CarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444EEF268928F000EF855B /* CarsTests.swift */; };
 		92444EFB268928F000EF855B /* CarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444EFA268928F000EF855B /* CarsUITests.swift */; };
+		92444F0E268D587400EF855B /* CurrencyTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444F0C268D587400EF855B /* CurrencyTrackerViewController.swift */; };
+		92444F0F268D587400EF855B /* CurrencyTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */; };
+		92FB2168268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB2167268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		92444EF6268928F000EF855B /* CarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92444EFA268928F000EF855B /* CarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsUITests.swift; sourceTree = "<group>"; };
 		92444EFC268928F000EF855B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92444F0C268D587400EF855B /* CurrencyTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTrackerViewController.swift; sourceTree = "<group>"; };
+		92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTrackerViewController.xib; sourceTree = "<group>"; };
+		92FB2167268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTrackerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 				92444ED8268928EF00EF855B /* AppDelegate.swift */,
 				92444EDA268928EF00EF855B /* SceneDelegate.swift */,
 				92444EDC268928EF00EF855B /* ViewController.swift */,
+				92444F0B268D584000EF855B /* CurrencyTracker */,
 				92444EDE268928EF00EF855B /* Main.storyboard */,
 				92444EE1268928EF00EF855B /* Assets.xcassets */,
 				92444EE3268928EF00EF855B /* LaunchScreen.storyboard */,
@@ -126,6 +133,16 @@
 				92444EFC268928F000EF855B /* Info.plist */,
 			);
 			path = CarsUITests;
+			sourceTree = "<group>";
+		};
+		92444F0B268D584000EF855B /* CurrencyTracker */ = {
+			isa = PBXGroup;
+			children = (
+				92444F0C268D587400EF855B /* CurrencyTrackerViewController.swift */,
+				92FB2167268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift */,
+				92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */,
+			);
+			path = CurrencyTracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92444F0F268D587400EF855B /* CurrencyTrackerViewController.xib in Resources */,
 				92444EE5268928EF00EF855B /* LaunchScreen.storyboard in Resources */,
 				92444EE2268928EF00EF855B /* Assets.xcassets in Resources */,
 				92444EE0268928EF00EF855B /* Main.storyboard in Resources */,
@@ -258,7 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92444F0E268D587400EF855B /* CurrencyTrackerViewController.swift in Sources */,
 				92444EDD268928EF00EF855B /* ViewController.swift in Sources */,
+				92FB2168268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift in Sources */,
 				92444ED9268928EF00EF855B /* AppDelegate.swift in Sources */,
 				92444EDB268928EF00EF855B /* SceneDelegate.swift in Sources */,
 			);

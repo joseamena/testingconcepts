@@ -11,7 +11,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let vm = CurrencyTrackerViewModel()
+        let vc = CurrencyTrackerViewController(viewModel: vm)
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+        
     }
 
 
