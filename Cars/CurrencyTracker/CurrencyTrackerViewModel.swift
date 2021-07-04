@@ -9,6 +9,13 @@ import Foundation
 
 
 class CurrencyTrackerViewModel {
+    
+    private let currencyService: CurrencyService
+    
+    init(currencyService: CurrencyService) {
+        self.currencyService = currencyService
+    }
+    
     private let currencies: [String : String] =
         [
             "BTC" : "Bitcoin",
@@ -21,8 +28,11 @@ class CurrencyTrackerViewModel {
     }
     
     var availableCurrencies: [String] {
-        let ret = currencies.values.map({$0})
-        print(ret)
+        let ret = Array(currencies.values)
         return ret
+    }
+    
+    var availableCodes: [String] {
+        return Array(currencies.keys)
     }
 }

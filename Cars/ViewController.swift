@@ -11,14 +11,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let vm = CurrencyTrackerViewModel()
-        let vc = CurrencyTrackerViewController(viewModel: vm)
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
-        
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        let vm = CurrencyTrackerViewModel(
+            currencyService: DefaultCurrencyService(networkProvider: DefaultNetworkProvider())
+        )
+        let vc = CurrencyTrackerViewController(viewModel: vm)
+        
+        let navigationController = UINavigationController(rootViewController: vc)
 
+        navigationController.modalPresentationStyle = .fullScreen
 
+        self.present(navigationController, animated: false, completion: nil)
+    }
 }
 

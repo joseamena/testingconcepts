@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		921FB11626923F430066CDC6 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FB11526923F430066CDC6 /* CurrencyService.swift */; };
+		921FB11F2692441B0066CDC6 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FB11E2692441B0066CDC6 /* Coin.swift */; };
+		921FB125269244DB0066CDC6 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921FB124269244DB0066CDC6 /* NetworkProvider.swift */; };
 		92444ED9268928EF00EF855B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444ED8268928EF00EF855B /* AppDelegate.swift */; };
 		92444EDB268928EF00EF855B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444EDA268928EF00EF855B /* SceneDelegate.swift */; };
 		92444EDD268928EF00EF855B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444EDC268928EF00EF855B /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 		92444F0E268D587400EF855B /* CurrencyTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92444F0C268D587400EF855B /* CurrencyTrackerViewController.swift */; };
 		92444F0F268D587400EF855B /* CurrencyTrackerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */; };
 		92FB2168268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB2167268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift */; };
+		92FB2174268D699400F3DE12 /* CurrencyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB2172268D699400F3DE12 /* CurrencyDetailsViewController.swift */; };
+		92FB2175268D699400F3DE12 /* CurrencyDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FB2173268D699400F3DE12 /* CurrencyDetailsViewController.xib */; };
+		92FB217B268D6A7C00F3DE12 /* CurrencyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FB217A268D6A7C00F3DE12 /* CurrencyDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		921FB11526923F430066CDC6 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		921FB11E2692441B0066CDC6 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		921FB124269244DB0066CDC6 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		92444ED5268928EF00EF855B /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92444ED8268928EF00EF855B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92444EDA268928EF00EF855B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +64,9 @@
 		92444F0C268D587400EF855B /* CurrencyTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTrackerViewController.swift; sourceTree = "<group>"; };
 		92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTrackerViewController.xib; sourceTree = "<group>"; };
 		92FB2167268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTrackerViewModel.swift; sourceTree = "<group>"; };
+		92FB2172268D699400F3DE12 /* CurrencyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewController.swift; sourceTree = "<group>"; };
+		92FB2173268D699400F3DE12 /* CurrencyDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyDetailsViewController.xib; sourceTree = "<group>"; };
+		92FB217A268D6A7C00F3DE12 /* CurrencyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		921FB11426923F300066CDC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				921FB11526923F430066CDC6 /* CurrencyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		921FB11D269243B60066CDC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				921FB11E2692441B0066CDC6 /* Coin.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		921FB123269244C50066CDC6 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				921FB124269244DB0066CDC6 /* NetworkProvider.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		92444ECC268928EF00EF855B = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +141,10 @@
 		92444ED7268928EF00EF855B /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				921FB123269244C50066CDC6 /* Networking */,
+				921FB11D269243B60066CDC6 /* Models */,
+				921FB11426923F300066CDC6 /* Services */,
+				92FB2179268D6A5D00F3DE12 /* CurrencyDetails */,
 				92444ED8268928EF00EF855B /* AppDelegate.swift */,
 				92444EDA268928EF00EF855B /* SceneDelegate.swift */,
 				92444EDC268928EF00EF855B /* ViewController.swift */,
@@ -143,6 +183,16 @@
 				92444F0D268D587400EF855B /* CurrencyTrackerViewController.xib */,
 			);
 			path = CurrencyTracker;
+			sourceTree = "<group>";
+		};
+		92FB2179268D6A5D00F3DE12 /* CurrencyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				92FB2172268D699400F3DE12 /* CurrencyDetailsViewController.swift */,
+				92FB217A268D6A7C00F3DE12 /* CurrencyDetailsViewModel.swift */,
+				92FB2173268D699400F3DE12 /* CurrencyDetailsViewController.xib */,
+			);
+			path = CurrencyDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92444F0F268D587400EF855B /* CurrencyTrackerViewController.xib in Resources */,
+				92FB2175268D699400F3DE12 /* CurrencyDetailsViewController.xib in Resources */,
 				92444EE5268928EF00EF855B /* LaunchScreen.storyboard in Resources */,
 				92444EE2268928EF00EF855B /* Assets.xcassets in Resources */,
 				92444EE0268928EF00EF855B /* Main.storyboard in Resources */,
@@ -276,11 +327,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921FB11F2692441B0066CDC6 /* Coin.swift in Sources */,
+				92FB2174268D699400F3DE12 /* CurrencyDetailsViewController.swift in Sources */,
 				92444F0E268D587400EF855B /* CurrencyTrackerViewController.swift in Sources */,
 				92444EDD268928EF00EF855B /* ViewController.swift in Sources */,
 				92FB2168268D5B0D00F3DE12 /* CurrencyTrackerViewModel.swift in Sources */,
+				921FB11626923F430066CDC6 /* CurrencyService.swift in Sources */,
+				92FB217B268D6A7C00F3DE12 /* CurrencyDetailsViewModel.swift in Sources */,
 				92444ED9268928EF00EF855B /* AppDelegate.swift in Sources */,
 				92444EDB268928EF00EF855B /* SceneDelegate.swift in Sources */,
+				921FB125269244DB0066CDC6 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

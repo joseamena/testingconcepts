@@ -14,11 +14,13 @@ class CurrencyTrackerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setup()
     }
     
     private func setup() {
         currenciesTableView.dataSource = self
+        currenciesTableView.delegate = self
+        currenciesTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
     init(viewModel: CurrencyTrackerViewModel) {
@@ -32,13 +34,30 @@ class CurrencyTrackerViewController: UIViewController {
 }
 
 extension CurrencyTrackerViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.availableCurrencies.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = viewModel.availableCurrencies[indexPath.row]
         return cell
+    }
+    
+}
+
+extension CurrencyTrackerViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let selectedCode = viewModel.availableCodes[indexPath.row]
+        
+        let currencyDetailsViewModel = CurrencyDetailsViewModel(
+            code: selectedCode,
+            currencyService: DefaultCurrencyService(networkProvider: DefaultNetworkProvider())
+        )
+        let currencyDetailsViewController = CurrencyDetailsViewController(viewModel: currencyDetailsViewModel)
+        
+        self.navigationController?.pushViewController(currencyDetailsViewController, animated: true)
     }
 }
